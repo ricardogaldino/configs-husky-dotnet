@@ -1,0 +1,27 @@
+{
+  "name": "???",
+  "version": "1.0.0",
+  "description": "???",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "dotnet tool restore",
+    "unit-test": "dotnet test ??? /p:CollectCoverage=false",
+    "integ-test": "dotnet test ???  /p:CollectCoverage=false",
+    "arch-test": "dotnet test ??? /p:CollectCoverage=false",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.1"
+  },
+  "lint-staged": {
+    "*.cs": "dotnet dotnet-format --include"
+  }
+}
